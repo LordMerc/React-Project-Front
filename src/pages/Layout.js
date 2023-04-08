@@ -7,6 +7,7 @@ import {
   Center,
   Link,
   HStack,
+  Button,
 } from '@chakra-ui/react';
 import { BsSun, BsMoon } from 'react-icons/bs';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
@@ -15,10 +16,9 @@ const Layout = () => {
   return (
     <>
       <header>
-        <IconButton
-          onClick={toggleColorMode}
-          icon={colorMode === 'light' ? <BsSun /> : <BsMoon />}
-        />
+        <Button leftIcon={colorMode === 'light' ? <BsMoon/> : <BsSun/>} onClick={toggleColorMode}>
+          Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
+        </Button>
       </header>
       <Outlet />
       <Container as="footer" role="contentinfo" py={{ base: '12', md: '16' }}>
