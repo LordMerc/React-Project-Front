@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
 import {
-  IconButton,
   useColorMode,
   Text,
   Container,

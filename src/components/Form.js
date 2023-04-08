@@ -32,11 +32,10 @@ const FormModal = () => {
   const bg = useColorModeValue('gray.200', 'gray.900');
   const variant = useColorModeValue('solid', 'outline');
   const [input, setInput] = useState('');
-  const [phone, setPhone] = useState('');
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [showHelp, toggleHelp] = useBoolean();
   const handleInputChange = e => setInput(e.target.value);
-  const handlePhoneInputChange = e => setPhone(e.target.value);
+
   const isError =
     (!input.match('@') || !input.match('.com')) & (input.length > 0);
 
@@ -49,7 +48,7 @@ const FormModal = () => {
       </FormControl>
       <FormControl>
         <FormLabel>Phone Number </FormLabel>
-        <Input bg={bg} onChange={handlePhoneInputChange} type="tele" />
+        <Input bg={bg} type="tele" />
       </FormControl>
       <FormControl>
         <FormLabel>Model Number</FormLabel>
