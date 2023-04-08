@@ -23,10 +23,10 @@ import {
   Heading,
   HStack,
   useBoolean,
-  Image
+  Image,
 } from '@chakra-ui/react';
 import { useState } from 'react';
-import { MdQuestionAnswer } from "react-icons/md"
+import { MdQuestionAnswer } from 'react-icons/md';
 
 const FormModal = () => {
   const bg = useColorModeValue('gray.200', 'gray.900');
@@ -113,7 +113,10 @@ const FormModal = () => {
               <Text fontSize="2xl" as="b">
                 Your ticket was submitted!
               </Text>
-              <Text>Your ticket has been submitted to our team! We will reach out shortly!</Text>
+              <Text>
+                Your ticket has been submitted to our team! We will reach out
+                shortly!
+              </Text>
               <Card variant="outline">
                 <CardBody>
                   <Stack divider={<StackDivider />} spacing="4">

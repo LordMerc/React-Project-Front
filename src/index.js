@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import Home from './pages/Home';
 import React, { StrictMode } from 'react';
+import Error404 from './pages/Error404';
 export default function App() {
   return (
     <StrictMode>
@@ -12,6 +13,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
+              <Route path="*" element={<Error404 />} />
             </Route>
           </Routes>
         </BrowserRouter>

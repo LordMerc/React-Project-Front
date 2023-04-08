@@ -15,7 +15,10 @@ const Layout = () => {
   return (
     <>
       <header>
-        <Button leftIcon={colorMode === 'light' ? <BsMoon/> : <BsSun/>} onClick={toggleColorMode}>
+        <Button
+          leftIcon={colorMode === 'light' ? <BsMoon /> : <BsSun />}
+          onClick={toggleColorMode}
+        >
           Toggle {colorMode === 'light' ? 'Dark' : 'Light'}
         </Button>
       </header>
