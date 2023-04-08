@@ -2,7 +2,6 @@ import {
   Flex,
   Center,
   VStack,  
-  Text,
   Heading} from '@chakra-ui/react';
 
 const Error404 = () => {
